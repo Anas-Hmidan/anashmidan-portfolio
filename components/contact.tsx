@@ -93,7 +93,7 @@ export default function Contact() {
         from_email: formData.email,
         subject: `New Message from My Portfolio! - ${getSelectedSubjectLabel()}`,
         message: formData.message,
-        to_email: "anashmidan8@gmail.com",
+        to_email: "its.anas961@gmail.com",
       }
 
       // Initialize EmailJS if not already initialized
