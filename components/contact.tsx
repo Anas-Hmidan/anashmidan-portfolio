@@ -15,7 +15,7 @@ export default function Contact() {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
-    subject: "", // Empty default value
+    subject: "", 
     message: "",
   })
   const [isSubmitting, setIsSubmitting] = useState(false)
@@ -25,12 +25,11 @@ export default function Contact() {
   const { language, isRTL } = useLanguage()
   const [mounted, setMounted] = useState(false)
 
-  // EmailJS configuration with your provided credentials
-  const serviceId = "service_lc8r98s"
-  const templateId = "template_nfssu9h"
-  const publicKey = "Sn7xWqNMWS5O_qDJQ"
 
-  // Use a safe way to access translations
+  const serviceId = "service_quk1szr"
+  const templateId = "template_id6hz1p"
+  const publicKey = "Z8iI5DB-1BahZhLru"
+
   const t = mounted ? translations[language] : translations.en
 
   useEffect(() => {
@@ -94,7 +93,7 @@ export default function Contact() {
         from_email: formData.email,
         subject: `New Message from My Portfolio! - ${getSelectedSubjectLabel()}`,
         message: formData.message,
-        to_email: "hmidananas@DJERBA.r-iset.tn",
+        to_email: "anashmidan8@gmail.com",
       }
 
       // Initialize EmailJS if not already initialized
@@ -156,10 +155,10 @@ export default function Contact() {
                   <div>
                     <h4 className="text-lg font-medium">{t.email}</h4>
                     <a
-                      href="mailto:hmidananas@DJERBA.r-iset.tn"
+                      href="mailto:anashmidan8@gmail.com"
                       className="text-gray-300 hover:text-teal-400 transition-colors"
                     >
-                      hmidananas@DJERBA.r-iset.tn
+                      anashmidan8@gmail.com
                     </a>
                   </div>
                 </div>
