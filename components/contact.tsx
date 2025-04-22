@@ -26,9 +26,10 @@ export default function Contact() {
   const [mounted, setMounted] = useState(false)
 
 
-  const serviceId = "service_quk1szr"
-  const templateId = "template_id6hz1p"
-  const publicKey = "Z8iI5DB-1BahZhLru"
+  const serviceId = process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID as string
+  const templateId = process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID as string
+  const publicKey = process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY as string
+  
 
   const t = mounted ? translations[language] : translations.en
 
@@ -133,7 +134,7 @@ export default function Contact() {
           initial="hidden"
           animate={isInView ? "visible" : "hidden"}
           variants={containerVariants}
-          className="max-w-7xl mx-auto" // Increased from max-w-6xl
+          className="max-w-7xl mx-auto" 
         >
           <motion.h2 variants={itemVariants} className="text-3xl md:text-4xl font-bold mb-4 text-center">
             {firstWord} <span className="text-teal-400">{restWords}</span>
@@ -155,10 +156,10 @@ export default function Contact() {
                   <div>
                     <h4 className="text-lg font-medium">{t.email}</h4>
                     <a
-                      href="mailto:anashmidan8@gmail.com"
+                      href="mailto:anas.hmidan@DJERBA.r-iset.tn"
                       className="text-gray-300 hover:text-teal-400 transition-colors"
                     >
-                      anashmidan8@gmail.com
+                      anas.hmidan@DJERBA.r-iset.tn
                     </a>
                   </div>
                 </div>
