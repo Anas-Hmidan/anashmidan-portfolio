@@ -38,7 +38,7 @@ export default function Footer() {
               <Linkedin className="w-5 h-5" />
             </a>
             <a
-              href="mailto:anashmidan8@gmail.com"
+              href="mailto:anas.hmidan@DJERBA.r-iset.tn"
               className="text-gray-400 hover:text-teal-400 transition-colors"
             >
               <Mail className="w-5 h-5" />
