@@ -19,8 +19,14 @@ const ThreeScene = dynamic(
   {
     ssr: false,
     loading: () => (
-      <div className="w-full h-full flex items-center justify-center">
-        <div className="loading-spinner"></div>
+      <div className="w-full h-full flex items-center justify-center bg-gradient-to-b from-gray-900 to-black">
+        <div className="text-center space-y-4">
+          <h1 className="text-5xl md:text-6xl font-bold mb-4 animate-pulse">
+            <span className="text-teal-400">A</span>nas <span className="text-teal-400">H</span>midan
+          </h1>
+          <p className="text-gray-300 text-xl animate-pulse">IT Student | Information Systems Development</p>
+          <div className="loading-spinner mt-8"></div>
+        </div>
       </div>
     ),
   },
@@ -71,8 +77,14 @@ export default function Hero() {
             </div>
           </div>
         ) : (
-          <div className="w-full h-full flex items-center justify-center">
-            <div className="loading-spinner"></div>
+          <div className="w-full h-full flex items-center justify-center bg-gradient-to-b from-gray-900 to-black">
+            <div className="text-center space-y-4">
+              <h1 className="text-5xl md:text-6xl font-bold mb-4 animate-pulse">
+                <span className="text-teal-400">A</span>nas <span className="text-teal-400">H</span>midan
+              </h1>
+              <p className="text-gray-300 text-xl animate-pulse">IT Student | Information Systems Development</p>
+              <div className="loading-spinner mt-8"></div>
+            </div>
           </div>
         )}
       </div>
